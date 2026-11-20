@@ -1,0 +1,19 @@
+{
+  "name": "petition-tracking",
+  "version": "1.0.0",
+  "description": "ระบบติดตามคำร้อง (ย้ายจาก Google Apps Script)",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js",
+    "db:init": "node scripts/init-db.js",
+    "db:import": "node scripts/import-sheets-csv.js"
+  },
+  "dependencies": {
+    "csv-parse": "^5.6.0",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "pg": "^8.13.1",
+    "csv-parse": "^7.0.3"
+  }
+}
